@@ -1,0 +1,16 @@
+# IDEA artifacts and output dirs
+*.iml
+*.ipr
+*.iws
+.idea
+out
+test-output
+atlassian-ide-plugin.xml
+.gradletasknamecache
+
+.DS_Store
+.settings
+.classpath
+.project
+target
+test
