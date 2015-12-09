@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
-	<bean id="NConnectionMaker" class="springbook.user.dao.NConnectionMaker" />
-	<bean id="DConnectionMaker" class="springbook.user.dao.DConnectionMaker" />
-	<bean id="userDao" class="springbook.user.dao.UserDao">
-		<property name="connectionMaker" ref="NConnectionMaker" />
-	</bean>
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <!--bean id="connectionMaker" class="net.terzeron.connection.NConnectionMaker" /-->
+    <!--bean id="DConnectionMaker" class="net.terzeron.connection.DConnectionMaker" /-->
+    <bean id="userDao" class="net.terzeron.user.UserDao">
+        <property name="dataSource" ref="dataSource" />
+    </bean>
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.SimpleDriverDataSource">
+        <property name="driverClass" value="com.mysql.jdbc.Driver" />
+        <property name="url" value="jdbc:mysql://localhost:3306/idms_dev_authdb" />
+        <property name="username" value="iauthconn" />
+        <property name="password" value="Qkdwlq" />
+    </bean>
 </beans>

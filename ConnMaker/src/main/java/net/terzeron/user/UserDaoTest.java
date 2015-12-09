@@ -15,6 +15,5 @@ public class UserDaoTest {
 		user.setName("testuser");
 		user.setPassword("testpass");
 		dao.add(user);
-		System.out.println(dao.get(1).getName());
 	}
 }
