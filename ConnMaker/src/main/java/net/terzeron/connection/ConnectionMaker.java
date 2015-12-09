@@ -1,4 +1,4 @@
-package old;
+package net.terzeron.connection;
 
 import java.sql.Connection;
 import java.sql.SQLException;

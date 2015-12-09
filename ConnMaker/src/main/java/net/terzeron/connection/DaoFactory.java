@@ -1,12 +1,11 @@
-package old;
+package net.terzeron.connection;
 
-import javax.sql.DataSource;
-
+import net.terzeron.user.UserDao;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.jdbc.datasource.SimpleDriverDataSource;
 
-import springbook.user.dao.UserDao;
+import javax.sql.DataSource;
 
 
 @Configuration

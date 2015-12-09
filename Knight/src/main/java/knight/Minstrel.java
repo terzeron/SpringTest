@@ -1,4 +1,4 @@
-package com.springinaction.chapter01.knight;
+package net.terzeron.knight;
 
 import org.apache.log4j.Logger;
 

@@ -1,4 +1,4 @@
-package com.springinaction.chapter01.knight;
+package net.terzeron.knight;
 
 public interface IQuest {
 	abstract Object embark() throws QuestFailedException;

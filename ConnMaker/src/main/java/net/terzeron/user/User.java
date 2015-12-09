@@ -1,4 +1,4 @@
-package springbook.user.dao;
+package net.terzeron.user;
 
 public class User {
 	int id;

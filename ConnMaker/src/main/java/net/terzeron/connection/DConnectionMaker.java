@@ -1,16 +1,16 @@
-package old;
+package net.terzeron.connection;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
 
-public class NConnectionMaker implements ConnectionMaker {
+public class DConnectionMaker implements ConnectionMaker {
 
 	public Connection makeConnection() throws ClassNotFoundException, SQLException {
 		Class.forName("org.sqlite.JDBC");
-		System.out.println("connecting to N");
-		Connection c = DriverManager.getConnection("jdbc:sqlite:N.db");
+		System.out.println("connecting to D");
+		Connection c = DriverManager.getConnection("jdbc:sqlite:D.db");
 		return c;
 	}
 	
