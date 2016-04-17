@@ -8,11 +8,20 @@ import java.util.List;
  */
 public class MovieLister {
     private MovieFinder finder;
-
+/*
     public MovieLister() {
         finder = new ColonDelimitedMovieFinder("movie1.txt");
     }
 
+    public MovieLister(MovieFinder finder) {
+        this.finder = finder;
+    }
+
+    public void setFinder(MovieFinder finder) {
+        this.finder = finder;
+    }
+*/
+    // 세터 방식으로 변경
     public Movie[] moviesDirectedBy(String arg) {
         List<Movie> allMovies = finder.findAll();
         for (Iterator<Movie> it = allMovies.iterator(); it.hasNext(); ) {

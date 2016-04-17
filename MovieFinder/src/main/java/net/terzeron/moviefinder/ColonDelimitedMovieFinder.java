@@ -17,6 +17,7 @@ public class ColonDelimitedMovieFinder implements MovieFinder {
 
     public ColonDelimitedMovieFinder(String fileName) {
         this.fileName = fileName;
+        /*
         this.v = new Vector<Movie>();
 
         StringBuffer sb = new StringBuffer();
@@ -49,6 +50,7 @@ public class ColonDelimitedMovieFinder implements MovieFinder {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        */
     }
 
     /* (non-Javadoc)
