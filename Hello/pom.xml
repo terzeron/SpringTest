@@ -3,7 +3,7 @@
   <groupId>net.terzeron.spring</groupId>
   <artifactId>SpringTest</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <name>SpringTest</name>
+  <name>Hello</name>
   <dependencies>
   	<dependency>
   		<groupId>junit</groupId>
