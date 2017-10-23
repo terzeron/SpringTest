@@ -1,4 +1,4 @@
-package net.terzeron.connection;
+package net.terzeron.spring.connection;
 
 import java.sql.Connection;
 import java.sql.SQLException;

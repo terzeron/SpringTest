@@ -1,4 +1,4 @@
-package net.terzeron.user;
+package net.terzeron.spring.user;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

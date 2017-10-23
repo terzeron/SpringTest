@@ -1,4 +1,4 @@
-package net.terzeron.user;
+package net.terzeron.spring.user;
 
 public class User {
 	int id;
