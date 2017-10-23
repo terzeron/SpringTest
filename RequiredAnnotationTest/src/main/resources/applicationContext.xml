@@ -7,6 +7,6 @@
     <bean class="org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor"/>
     <bean id="product" class="net.terzeron.spring.requiredannotationtest.Product">
         <property name="name" value="ProductA"/>
-        <!-- property name="price" value="400" --/>
+        <property name="price" value="400" />
     </bean>
 </beans>

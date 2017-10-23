@@ -8,7 +8,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  */
 public class MainApp {
     public static void main(String[] args) {
-        ApplicationContext context = new ClassPathXmlApplicationContext("BeansRequiredAnnotation.xml");
+        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         Product product = (Product) context.getBean("product");
         System.out.println("Product name:" + product.getName());
         System.out.println("Price:" + product.getPrice());
