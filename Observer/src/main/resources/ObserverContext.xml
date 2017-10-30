@@ -5,13 +5,13 @@
 <beans>
 	<!-- This bean is the town crier.  
 	He's responsible for notifying all town residents that are interested in his message -->
-	<bean id="townCrier" class="springobserver.TownCrier"/>
+	<bean id="townCrier" class="net.terzeron.spring.observer.TownCrier"/>
 	
 	<!-- this bean is a town resident interested in the town criers messages -->
-	<bean id="townResident1" class="springobserver.TownResident"/>          
+	<bean id="townResident1" class="net.terzeron.spring.observer.TownResident"/>
        
 	<!-- this bean is another town resident interested in the town criers messages -->
-	<bean id="townResident2" class="springobserver.TownResident2"/>
+	<bean id="townResident2" class="net.terzeron.spring.observer.TownResident2"/>
     
     
      <!-- this is a method invoking bean that registers the first town resident with
