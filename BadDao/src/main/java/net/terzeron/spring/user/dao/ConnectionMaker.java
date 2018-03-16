@@ -1,7 +1,5 @@
 package net.terzeron.spring.user.dao;
 
-import sun.tools.java.ClassNotFound;
-
 import java.sql.Connection;
 import java.sql.SQLException;
 
