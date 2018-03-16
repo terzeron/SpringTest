@@ -38,7 +38,7 @@
                     <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
-                            <mainClass>net.terzeron.moviefinder.MovieLister</mainClass>
+                            <mainClass>net.terzeron.spring.moviefinder.MovieLister</mainClass>
                             <classpathPrefix>dependency-jars</classpathPrefix>
                         </manifest>
                     </archive>

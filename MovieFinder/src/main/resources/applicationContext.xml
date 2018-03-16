@@ -2,12 +2,12 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean id="MovieLister" class="net.terzeron.moviefinder.MovieLister">
+    <bean id="MovieLister" class="net.terzeron.spring.moviefinder.MovieLister">
         <property name="finder">
             <ref local="MovieFinder" />
         </property>
     </bean>
-    <bean id="MovieFinder" class="net.terzeron.moviefinder.ColonDelimitedMovieFinder">
+    <bean id="MovieFinder" class="net.terzeron.spring.moviefinder.ColonDelimitedMovieFinder">
         <property name="filename">
             <value>movies1.txt</value>
         </property>
