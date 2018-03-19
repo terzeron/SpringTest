@@ -8,7 +8,6 @@ import java.util.List;
  */
 public class MovieLister {
     private MovieFinder finder;
-/*
     public MovieLister() {
         finder = new ColonDelimitedMovieFinder("movie1.txt");
     }
@@ -20,7 +19,7 @@ public class MovieLister {
     public void setFinder(MovieFinder finder) {
         this.finder = finder;
     }
-*/
+
     // 세터 방식으로 변경
     public Movie[] moviesDirectedBy(String arg) {
         List<Movie> allMovies = finder.findAll();
@@ -34,7 +33,7 @@ public class MovieLister {
 
     public static void main(String[] args) {
         MovieLister ml = new MovieLister();
-        Movie[] mla = ml.moviesDirectedBy("hello");
+        Movie[] mla = ml.moviesDirectedBy("A");
         for (int i = 0; i < mla.length; i++) {
             System.out.println(mla[i].getName());
         }

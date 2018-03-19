@@ -1,21 +1,24 @@
 package net.terzeron.spring.knight;
 
-import org.apache.log4j.Logger;
+import java.io.PrintStream;
 
 /**
  * @author terzeron
  *
  */
 public class Minstrel {
-	private static final Logger SONG = Logger.getLogger(Minstrel.class);
-	
-	public Minstrel() {}
-	
-	public void singBefore(IKnight knight) {
-		SONG.info("Fa la la; Sir " + knight.getName() + " is so brave!");
+	private PrintStream stream;
+
+	public Minstrel(PrintStream stream) {
+		this.stream = stream;
 	}
-	
-	public void singAfter(IKnight knight) {
-		SONG.info("Tee-hee-he; Sir " + knight.getName() + " did embark on a quest!");
+
+	public void singBeforeQuest() {
+		stream.println("Fa la la, the knight is so brave!");
+	}
+
+	public void singAfterQuest() {
+		stream.println("Tee hee hee, the brave knight " +
+				"did embark on a quest!");
 	}
 }

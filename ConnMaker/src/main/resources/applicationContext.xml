@@ -5,7 +5,7 @@
 
     <!--bean id="connectionMaker" class="net.terzeron.connection.NConnectionMaker" /-->
     <!--bean id="DConnectionMaker" class="net.terzeron.connection.DConnectionMaker" /-->
-    <bean id="userDao" class="net.terzeron.user.UserDao">
+    <bean id="userDao" class="net.terzeron.spring.user.UserDao">
         <property name="dataSource" ref="dataSource" />
     </bean>
     <bean id="dataSource" class="org.springframework.jdbc.datasource.SimpleDriverDataSource">

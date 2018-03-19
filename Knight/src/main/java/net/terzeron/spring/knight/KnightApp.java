@@ -5,9 +5,11 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class KnightApp {
 	public static void main(String[] args) throws Exception {
-		ApplicationContext ctx = new ClassPathXmlApplicationContext("knight.xml");
-		// BeanFactory를 사용하면 AOP가 제대로 처리되지 않음. 반드시 ApplicationContext를 사용할 것.
-		IKnight knight = (IKnight) ctx.getBean("knight");
+		ClassPathXmlApplicationContext context =
+				new ClassPathXmlApplicationContext(
+						"META-INF/spring/knight.xml");
+		Knight knight = context.getBean(Knight.class);
 		knight.embarkOnQuest();
+		context.close();
 	}
 }

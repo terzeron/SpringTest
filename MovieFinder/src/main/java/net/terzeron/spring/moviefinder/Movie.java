@@ -7,6 +7,11 @@ public class Movie {
     private String name;
     private String director;
 
+    public Movie(String title, String director) {
+        this.name = title;
+        this.director = director;
+    }
+
     /**
      * @return the name
      */

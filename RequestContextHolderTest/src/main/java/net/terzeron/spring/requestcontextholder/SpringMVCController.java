@@ -11,6 +11,7 @@ import org.springframework.web.context.request.RequestContextHolder;
  */
 @Controller
 public class SpringMVCController {
+    // http://localhost:8080/springmvctest
     @RequestMapping(value = "/springmvctest", method = RequestMethod.GET)
     public String redirectTest() {
         // setting value to HttpSession object

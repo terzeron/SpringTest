@@ -33,7 +33,7 @@
         </dependency>
     </dependencies>
 
-    <build>
+    <!--build>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -43,7 +43,7 @@
                     <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
-                            <mainClass>net.terzeron.user.UserDaoTest</mainClass>
+                            <mainClass>net.terzeron.spring.user.UserDaoTest</mainClass>
                             <classpathPrefix>dependency-jars</classpathPrefix>
                         </manifest>
                     </archive>
@@ -74,5 +74,5 @@
                 <version>3.3</version>
             </plugin>
         </plugins>
-    </build>
+    </build-->
 </project>
