@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+       http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
+    <bean id="addressBean" class="com.terzeron.spring.Address">
+        <property name="street">
+            <value>Cinnamon Street</value>
+        </property>
+        <property name="city">
+            <value>Orchard City</value>
+        </property>
+        <property name="pincode">
+            <value>123456</value>
+        </property>
+    </bean>
+
+    <bean id="employeeBean" class="com.terzeron.spring.Employee">
+        <property name="name">
+            <value>Foo Bar</value>
+        </property>
+        <property name="address">
+            <ref bean="addressBean"/>
+        </property>
+    </bean>
+</beans>
