@@ -7,6 +7,7 @@
     <groupId>com.terzeron.spring</groupId>
     <artifactId>SpringTest</artifactId>
     <packaging>pom</packaging>
+    <version>1.0</version>
 
     <!-- 빌드 방법
         Build > Build Artifacts 메뉴에서 All Artifacts나 개별 jar를 골라서 Build 실행 -->
@@ -34,5 +35,6 @@
         <module>SpringSessionTest</module>
         <module>User</module>
         <module>LoadingWithBeanFactory</module>
+        <module>LoadingWithInitMethod</module>
     </modules>
 </project>
