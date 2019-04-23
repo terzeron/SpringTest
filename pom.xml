@@ -33,7 +33,6 @@
         <module>RestTest</module>
         <module>SimpleWeb</module>
         <module>SpringSessionTest</module>
-        <module>User</module>
         <module>LoadingWithBeanFactory</module>
         <module>LoadingWithInitMethod</module>
     </modules>
