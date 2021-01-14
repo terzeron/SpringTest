@@ -35,5 +35,6 @@
         <module>SpringSessionTest</module>
         <module>LoadingWithBeanFactory</module>
         <module>LoadingWithInitMethod</module>
+        <module>ConverterFormatterTest</module>
     </modules>
 </project>
