@@ -1,13 +1,15 @@
 package com.terzeron.spring.converter;
 
 import org.springframework.core.convert.support.ConversionServiceFactory;
+import org.springframework.core.convert.support.DefaultConversionService;
 import org.springframework.core.convert.support.GenericConversionService;
 
 import java.util.List;
 
 public class BuiltInForArrayTypeTest {
     public static void main(String[] args) {
-        GenericConversionService conversionService = ConversionServiceFactory.createDefaultConversionService();
+        //GenericConversionService conversionService = ConversionServiceFactory.createDefaultConversionService();
+        GenericConversionService conversionService = new DefaultConversionService();
         testToCollection(conversionService);
         testToString(conversionService);
         testToObject(conversionService);
